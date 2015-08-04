@@ -1,0 +1,3 @@
+[ { "FirstName" : "Vishwesh", "LastName" : "Joshi", "RollNo" : "1", "Subject" : {"sub1" : "Chemistry" , "sub2" : "Math" , "sub3" : "Physics"} } ,
+  { "FirstName" : "Swapnil", "LastName" : "Randhir", "RollNo" : "2", "Subject" : {"sub1" : "Chemistry" , "sub2" : "Math" , "sub3" : "Physics"} } ,
+  { "FirstName" : "Gaurav", "LastName" : "Patil", "RollNo" : "3", "Subject" : {"sub1" : "Chemistry" , "sub2" : "Math" , "sub3" : "Physics"} } ]
