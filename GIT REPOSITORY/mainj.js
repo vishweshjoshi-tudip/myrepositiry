@@ -21,9 +21,9 @@ $(document).ready(function(){
 	    } else {
 	    	alert("All field's are compulsory")
 	    }
-	    $("#fname").value = "";
-	    $("#lname").value = "";
-	    $("#roll").value = "";
+	    document.getElementById("fname").value = "";
+	    document.getElementById("lname").value = "";
+	    document.getElementById("roll").value = "";
 	    $('input:checkbox').removeAttr('checked');
 	});
 });
