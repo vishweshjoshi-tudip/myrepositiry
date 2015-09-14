@@ -1,0 +1,150 @@
+<isdecorate template="/content/home/pt_storefront.isml">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<isinclude template="util/modules">
+	<header class="form_header_demo">
+		<h3 class="form_heading_left">${Resource.msg('forms.profile.personal', 'forms', null)}</h3>
+		<h3 class="form_heading_right">${Resource.msg('forms.profile.right', 'forms', null)}</h3>
+	</header>
+	<form action="${URLUtils.httpContinue()}" method="post" id="${pdict.CurrentForms.newsletter.htmlName}">
+		<fieldset>
+		    <div class="formfield">
+		        <isinputfield formfield="${pdict.CurrentForms.newsletter.fname}" type="input">
+		    </div>
+		    <div class="formfield">
+		        <isinputfield formfield="${pdict.CurrentForms.newsletter.lname}" type="input">
+		    </div>
+		    <div class="formfield">
+		        <isinputfield formfield="${pdict.CurrentForms.newsletter.gender}" type="select" rowclass="form_profile_select">
+		    </div>
+		    <div class="formfield">
+		        <isinputfield formfield="${pdict.CurrentForms.newsletter.birthday}" type="date" rowclass="form_profile_birth">
+		    </div>
+		    <div class="formfield">
+		        <isinputfield formfield="${pdict.CurrentForms.newsletter.website}" type="input">
+		    </div>
+		    <div class="formfield">
+		        <isinputfield formfield="${pdict.CurrentForms.newsletter.email}" type="input" rowclass="form_profile_email">
+		        <isinputfield formfield="${pdict.CurrentForms.newsletter.email_checkbox}" type="checkbox" rowclass="form_profile_termscondition" />
+		    </div>
+		    <div class="formfield">
+			    <isscript>
+					var attributes = {
+						rows: 10,
+						cols: 107,
+						'data-character-limit': 250
+					}
+				</isscript>
+				<isinputfield formfield="${pdict.CurrentForms.newsletter.comments}" type="textarea" attributes="${attributes}" rowClass="label-above" />
+		    </div>
+		</fieldset>
+	</form>
+	
+	<header class="form_header_demo">
+		<h3 class="form_heading_left">${Resource.msg('forms.profile.address', 'forms', null)}</h3>
+		<h3 class="form_heading_right">${Resource.msg('forms.profile.right', 'forms', null)}</h3>
+	</header>
+	<form action="${URLUtils.httpContinue()}" method="post" id="${pdict.CurrentForm.newsletter.htmlName}">
+		<fieldset>
+			<div class="formfield">
+		    	<isinputfield formfield="${pdict.CurrentForms.newsletter.address}" type="input"/>
+		    </div>
+		    <div class="formfield">
+		        <isinputfield formfield="${pdict.CurrentForms.newsletter.address1}" type="input"/>
+		    </div>
+		    <div class="formfield">
+		    	<isinputfield formfield="${pdict.CurrentForms.newsletter.country}" type="select" rowclass="form_profile_select"/>
+		    </div>
+		    <div class="formfield">
+		    	<isinputfield formfield="${pdict.CurrentForms.newsletter.state}" type="select" rowclass="form_profile_select"/>
+		    </div>
+		    <div class="formfield">
+		    	<isinputfield formfield="${pdict.CurrentForms.newsletter.city}" type="input"/>
+		    </div>
+		    <div class="formfield">
+		    	<isinputfield formfield="${pdict.CurrentForms.newsletter.zipcode}" type="input"/>
+		    </div>
+		    <div class="formfield">
+		    	<isinputfield formfield="${pdict.CurrentForms.newsletter.phone}" type="input" rowclass="form_profile_phone"/>
+		    </div>
+		    
+			
+		</fieldset>
+	</form>
+	
+	<header class="form_header_demo">
+		<h3 class="form_heading_left">${Resource.msg('forms.profile.payment', 'forms', null)}</h3>
+		<h3 class="form_heading_right">${Resource.msg('forms.profile.right', 'forms', null)}</h3>
+	</header>
+	<form action="${URLUtils.httpContinue()}" method="post" id="${pdict.CurrentForm.newsletter.htmlName}">
+		<fieldset>
+			<div class="registration-selection">
+				<label for="register-here">${Resource.msg('forms.contactus.creditcard.label','forms',null)}</label>
+				<input type="radio" name="payment" value="credit-card" id="credit-card" checked/>
+				<label for="register-facebook">${Resource.msg('forms.contactus.billmelater.label','forms',null)}</label>
+				<input type="radio" name="payment" value="bill-me-later"  id="cod"/> 
+			</div>
+		    
+		    <script>
+		    	$(document).ready(function(){
+		    		$(".hideshow1").hide();
+		    		$("#credit-card").click(function(){
+		    			$(".hideshow").show();
+		    			$(".hideshow1").hide();
+		    		});
+		    		$("#cod").click(function(){
+		    			$(".hideshow1").show();
+		    			$(".hideshow").hide();
+		    		});
+		    	});
+		    </script>
+		    
+		    <div class="hideshow">
+			    <div class="formfield">
+			    	<isinputfield formfield="${pdict.CurrentForms.newsletter.cardname}" type="input"/>
+			    </div>
+			    <div class="formfield">
+			    	<isinputfield formfield="${pdict.CurrentForms.newsletter.cardtype}" type="select" rowclass="form_profile_select"/>
+			    </div>
+			    <div class="formfield">
+			    	<isinputfield formfield="${pdict.CurrentForms.newsletter.cardnumber}" type="input" rowclass="form_profile_phone"/>
+			    </div>
+			    <div class="formfield">
+			    	<isinputfield formfield="${pdict.CurrentForms.newsletter.cardexpiration}" type="select" rowclass="form_profile_select form_profile_card"/>
+			    	<isinputfield formfield="${pdict.CurrentForms.newsletter.cardexpiration1}" type="select" rowclass="form_profile_select form_profile_cardexpire"/>	
+			    </div>
+			    <div class="formfield">
+			    	<isinputfield formfield="${pdict.CurrentForms.newsletter.securitycode}" type="input" rowclass="form_profile_securitycode"/>
+			    </div>
+			    
+		    </div>
+		    
+		    <div class="hideshow1">
+		    	<div class="billmelater_info">
+		    		<label>${Resource.msg('bml.billmelater','forms',null)}</label>
+		    	</div>
+			    <div class="formfield">
+			    	<isinputfield formfield="${pdict.CurrentForms.newsletter.dob1}" type="select"  rowclass="form_profile_select form_profile_card"/>
+			    	<isinputfield formfield="${pdict.CurrentForms.newsletter.dob2}" type="select"  rowclass="form_profile_select form_profile_cardexpire"/>
+			    	<isinputfield formfield="${pdict.CurrentForms.newsletter.dob3}" type="select"  rowclass="form_profile_select form_profile_day"/>
+			    </div>
+			    <div class="formfield">
+			        <isinputfield formfield="${pdict.CurrentForms.newsletter.lastfourdigit}" type="input"/>
+			    </div>
+			    <div class="bml-terms-and-conditions form-caption">
+					<iscontentasset aid="bml-tc"/>
+				</div>
+				<div class="form-caption">
+					<isinputfield formfield="${pdict.CurrentForms.newsletter.termscondition}" type="checkbox" rowclass="form_profile_termscondition" />
+					<a href="${URLUtils.url('Page-Show', 'cid', 'privacy-policy')}" class="privacy-policy" title="${Resource.msg('global.privacypolicy','locale',null)}">${Resource.msg('global.privacypolicy','locale',null)}</a>
+				</div>
+			    
+		    </div>
+		    
+		    <div class="formactions">
+				<input type="submit" value="${Resource.msg('forms.continue.button','forms',null)}" name="${pdict.CurrentForms.newsletter.subscribe.htmlName}" class="input_button_submit"/>
+				<a href="#" class="back_to_top" title="${Resource.msg('profile.backtotop','forms',null)}">${Resource.msg('profile.backtotop','forms',null)}</a>
+			</div>
+		</fieldset>
+	</form>
+
+</isdecorate>

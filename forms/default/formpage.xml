@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<form xmlns="http://www.demandware.com/xml/form/2008-04-19">
+    <field formid="fname" label="forms.contactus.firstname.label" type="string" mandatory="true" max-length="50"/>
+    <field formid="lname" label="forms.contactus.lastname.label" type="string" mandatory="true" max-length="50"/>
+    
+    <field formid="gender" label="forms.contactus.gender.label" type="string" mandatory="true">
+    	<options>
+			<option optionid="" label="resource.select"	value=""/>
+			<option optionid="Male"	label="gender.male"	value="Male"/>
+			<option optionid="Female" label="gender.female" value="Female"/>
+		</options>	
+    </field>
+    
+    <field formid="birthday" label="profile.dob" type="date" mandatory="false" format="MM/dd/yyyy" max-length="10"/>
+    
+    <field formid="website" label="forms.contactus.website.label" type="string" mandatory="false" max-length="35"/>
+	
+	<field formid="email" label="forms.contactus.email.label" type="string" mandatory="true" 
+    	regexp="^[\w-\.]{1,}\@([\da-zA-Z-]{1,}\.){1,}[\da-zA-Z-]{2,6}$" 
+    	parse-error="forms.contactus.email.parse-error" 
+    	value-error="forms.contactus.email.value-error" 
+    	max-length="50"/>
+   
+    <field formid="comments" label="forms.contactus.comment.label" type="string" mandatory="false" />
+	
+	<action formid="success" valid-form="true"/>
+	
+	<field formid="address" label="forms.address1" type="string" mandatory="true" max-length="50"/>
+    <field formid="address1" label="forms.address2" type="string" mandatory="false" max-length="50"/>
+    
+    <field formid="country" label="forms.country" type="string" mandatory="true">
+		<options>
+			<option optionid="" 	label="resource.select"	value=""/>
+			<option optionid="US" 	label="country.unitedstates"	value="US"/>
+			<option optionid="DE" 	label="country.germany"		value="DE"/>
+			<option optionid="CA" 	label="country.canada"		value="CA"/>
+		</options>	
+	</field>
+	
+	<field formid="state" label="forms.state" type="string" mandatory="true">
+		<options>
+			<option optionid="" 	label="resource.select"	value=""/>
+			<option optionid="Alabama" 	label="state.us.alabama"	value="AL"/>
+			<option optionid="Arizona" 	label="state.us.arizona"	value="AR"/>
+			<option optionid="Alaska" 	label="state.us.alaska"		value="AA"/>
+		</options>	
+	</field>
+    
+    <field formid="city" label="forms.city" type="string" mandatory="true" max-length="50"/>
+    <field formid="zipcode" label="forms.zippostalcode" type="number" mandatory="true" max-length="50"/>
+    <field formid="phone" label="forms.contactus.phone.label" type="number" description="333-333-3333" mandatory="true" max-length="50"/>
+    
+    <field formid="card" label="creditcard.ownerlabel" type="string" mandatory="true" max-length="50"/>
+    <field formid="type" label="creditcard.type" type="string" mandatory="true" max-length="50">
+    	<options>
+    		<option optionid=""  label="resource.select"  value=""/>
+    		<option optionid="Visa"  label="creditcard.visa"  value="visa"/>
+    		<option optionid="Master"  label="creditcard.mastercard"  value="master"/>
+    	</options>
+    </field>
+    <field formid="number" label="creditcard.number" type="number" description="creditcard.numberexample" mandatory="true" max-length="50"/>
+    
+</form>

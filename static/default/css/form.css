@@ -1,0 +1,153 @@
+.form_header_demo {
+  background-color: #efefef;
+  height: 8%;
+  display: inline-block;
+  border-top: 2px solid #dadada;
+  width: 98%;
+  color: #4e4e4e;
+  padding: 1%;
+  float: left; }
+
+.form_heading_left {
+  float: left; }
+
+.form_heading_right {
+  float: right; }
+
+.form-row {
+  margin-left: 20%;
+  margin-right: 20%; }
+
+.form_profile_termscondition .field-wrapper {
+  margin-left: 8%; }
+
+.form-row .field-wrapper .input-radio {
+  margin-left: 10%; }
+
+.field-wrapper {
+  width: 83%;
+  float: left; }
+
+.form-row .field-wrapper {
+  float: left; }
+
+.form-row .field-wrapper .input-textarea {
+  margin-left: 8%; }
+
+.form-row .field-wrapper .char-count {
+  margin-left: 8%; }
+
+.form_profile_select .field-wrapper .input-select {
+  background: -webkit-linear-gradient(top, #e2e2e2 0%, #dbdbdb 50%, #d1d1d1 51%, #fefefe 100%);
+  background: linear-gradient(to bottom, #e2e2e2 0%, #dbdbdb 50%, #d1d1d1 51%, #fefefe 100%); }
+
+label {
+  width: 15%;
+  float: left;
+  margin: 2% 2% 0 0; }
+
+form {
+  border-bottom: 2px solid #dadada;
+  margin-bottom: 1%; }
+
+.formfield_payment {
+  border-bottom: none; }
+
+.form_profile_birth .field-wrapper .input-text {
+  width: 100%;
+  height: 30px; }
+
+.form_profile_phone .form-caption {
+  margin-left: 17%; }
+
+.formfield .form_checkbox_profile {
+  margin-left: 30%; }
+
+.input-radio {
+  margin-left: 34%; }
+
+.formfield .form_profile_card {
+  width: 21%;
+  float: left;
+  margin-right: 0%;
+  margin-left: 20%; }
+
+.formfield .form_profile_card label {
+  width: 48%; }
+
+.formfield .form_profile_card .field-wrapper {
+  width: 41%; }
+
+.formfield .form_profile_cardexpire {
+  width: 10%;
+  float: left;
+  margin-left: 0%;
+  margin-right: 0%; }
+
+.formfield .form_profile_cardexpire label {
+  display: none; }
+
+.formfield .form_profile_cardexpire .field-wrapper {
+  width: 100%;
+  margin-left: 0%;
+  margin-right: 0%; }
+
+.formfield .form_profile_securitycode {
+  width: 21%;
+  margin-left: 20%; }
+
+.formfield .form_profile_securitycode label {
+  width: 47%; }
+
+.formfield .form_profile_securitycode .field-wrapper {
+  width: 25%; }
+
+.registration-selection {
+  margin-left: 25%; }
+
+.registration-selection #credit-card {
+  margin-right: 30%;
+  margin-left: 0%; }
+
+.registration-selection #cod {
+  margin-left: 0%; }
+
+.formfield .form_profile_day {
+  width: 30%;
+  float: left;
+  margin-right: 0%;
+  margin-left: 2%; }
+
+.formfield .form_profile_day label {
+  width: 47%; }
+
+.formfield .form_profile_day .field-wrapper {
+  width: 25%; }
+
+.formfield .form_profile_day label {
+  display: none; }
+
+.bml-terms-and-conditions {
+  margin-left: 30%;
+  margin-right: 20%; }
+
+.billmelater_info label {
+  width: 100%;
+  margin-left: 30%; }
+
+.form_profile_termscondition {
+  width: 20%;
+  margin-left: 30%;
+  margin-right: 0%;
+  display: inline-block; }
+
+.formactions {
+  text-align: left;
+  margin-left: 25%; }
+
+.input_button_submit {
+  padding: 1% 4%;
+  background-color: #4ec3ef; }
+
+.formactions .back_to_top {
+  margin-left: 50%; }
